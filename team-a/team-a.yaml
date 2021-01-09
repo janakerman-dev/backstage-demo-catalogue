@@ -1,0 +1,46 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a
+  description: Team A
+spec:
+  type: team
+  profile:
+    email: team-a@example.com
+  parent: backstage
+  children: [team-a-backend, team-a-frontend]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a-backend
+  description: Team A
+spec:
+  type: team
+  profile:
+    email: team-a@example.com
+  parent: team-a
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a-frontend
+  description: Team A
+spec:
+  type: team
+  profile:
+    email: team-a@example.com
+  parent: team-a
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: team-a-components
+  description: Groups and teams for the organisation.
+spec:
+  targets:
+    - ./components/backoffice-ui.yaml
+    - ./components/notification-service.yaml
+    - ./components/orchestration-service.yaml

@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: orchestration-api
+  description: An API for orchestration.
+spec:
+  type: service
+  lifecycle: production
+  owner: team-a-backend

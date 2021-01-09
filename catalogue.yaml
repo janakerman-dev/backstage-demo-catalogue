@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: acme-corp
+  description: Groups and teams for the organisation.
+spec:
+  targets:
+    - ./acme.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: team-a
+  description: Team A's catalogue
+spec:
+  targets:
+    - ./team-a/team-a.yaml
