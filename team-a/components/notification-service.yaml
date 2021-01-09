@@ -4,6 +4,7 @@ metadata:
   name: notification-api
   description: An API for notifications.
   github.com/project-slug: janakerman-dev/backstage-demo-notification-service
+  travis-ci.com/repo-slug: janakerman-dev/backstage-demo-notification-service
 spec:
   type: service
   lifecycle: production
